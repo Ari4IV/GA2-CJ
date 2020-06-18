@@ -1,0 +1,25 @@
+import time
+from pynput.keyboard import Key, Controller
+fkeyboard = Controller()
+time.sleep(1)
+print('\nLadies and Gentlemen !')
+time.sleep(1)
+print('\nIt's a ShowTime !')
+time.sleep(1)
+t_end = time.time() + 14 * 12
+while time.time() < t_end:
+    fkeyboard.release('z')
+    fkeyboard.release('x')
+    fkeyboard.release('c')
+    fkeyboard.release('v')
+    fkeyboard.release('a')
+    fkeyboard.release('s')
+    fkeyboard.release('d')
+    fkeyboard.release('f')
+    fkeyboard.release(Key.space)
+    fkeyboard.release(Key.up)
+    fkeyboard.release(Key.down)
+    fkeyboard.release(Key.left)
+    fkeyboard.release(Key.right)
+    time.sleep(1.412)
+print('\nEnd of Show !')
